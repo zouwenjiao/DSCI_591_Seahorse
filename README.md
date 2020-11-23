@@ -30,9 +30,9 @@ To achieve this goal, we have explored different momentum indicators, as filters
 - Moving Average + Moving Average Convergence and Civergence - MA + MACD
 - Exponentially Weighted Moving Average + Moving Average Convergence and Divergence - EWMA + MACD
 
-For each filter, we have created functions for selecting signals, getting metric returns, picking out the top strategy and calculating statistics for the top strategies. We have also provided a walkthrough of the optimisation process for each strategy. You can refer to [strategy_calculation file](https://github.ubc.ca/MDS-2019-20/DSCI_591-Seahorse/tree/master/strategy_calculation) for more details. Finally, we compiled the results together and made a summary, and you can see visualised results in [summary compilation file](https://github.ubc.ca/MDS-2019-20/DSCI_591-Seahorse/blob/master/summary_compilation/plotting_analysis.ipynb).
+For each filter, we have created functions for selecting signals, getting metric returns, picking out the top strategy and calculating statistics for the top strategies. We have also provided a walkthrough of the optimisation process for each strategy. You can refer to [strategy_calculation file](https://github.com/zouwenjiao/DSCI_591_Seahorse/tree/main/strategy_calculation) for more details. Finally, we compiled the results together and made a summary, and you can see visualised results in [summary compilation file](https://github.com/zouwenjiao/DSCI_591_Seahorse/blob/main/summary_compilation/plotting_analysis.ipynb).
 
-For each strategy, we have a yearly breakdown of the annualised return metric (21 values based on 21 years). To check the statistical significance level of our results, we performed bootstrapping on the different strategies. You can see the bootstrapping process and results in the [bootstrap file](https://github.ubc.ca/MDS-2019-20/DSCI_591-Seahorse/blob/master/bootstrap/bootstrapping.ipynb).
+For each strategy, we have a yearly breakdown of the annualised return metric (21 values based on 21 years). To check the statistical significance level of our results, we performed bootstrapping on the different strategies. You can see the bootstrapping process and results in the [bootstrap file](https://github.com/zouwenjiao/DSCI_591_Seahorse/blob/main/bootstrap/bootstrapping.ipynb).
 
 
 ### Highlights
