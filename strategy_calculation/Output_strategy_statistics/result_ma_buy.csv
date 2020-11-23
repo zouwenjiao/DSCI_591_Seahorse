@@ -1,0 +1,2 @@
+,avg_metric,std_metric,avg_metric/std_metric,filter_counts,avg_port_cum_return,avg_holding_time_per_signal
+MA(28/13),0.26845657754560803,0.3737560321625152,0.7182668758343377,41477,2.36350940556381,0.8523313121328165

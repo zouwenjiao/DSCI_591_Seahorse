@@ -1,0 +1,32 @@
+---
+title: ''
+author: "Huayue"
+date: "11/05/2020"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.width = 5, fig.height = 3, fig.align = "center")
+```
+
+
+## Plan (Predictive Objective):
+### 1. Train test split:
+Split 80%-20% for train-test signal data in either the time dimension or stock dimension.
+ 
+### 2. Create data table:
+a) Obtain all primary oscillator signals by extracting peaks and troughs from oscillator data.
+b) Create feature engineering covariates (X), and features might be some momentum indicator like moving average:
+    - To know the trend of moving average curve, we will calculate the slope of given point by using neighbour points
+c) Create appropriate labels (y):
+    - If a Sell Signal follows a Buy signal with a higher stock price, both signals are given 1 (Profit)
+    - Otherwise, they will be 0 (Loss).
+    
+### 3. Choose ML model:
+Supervised Learning Modelling: Random Forests, Logistic Regression, Neural networks, etc.
+
+### 4. Tuning
+Tune the model hyperparameters such that the model has a high precision rate (predicted profitable trades have a high ratio of truly profitable trades). Use hyperparameter tuning techniques to avoid overfitting and underfitting problem.
+

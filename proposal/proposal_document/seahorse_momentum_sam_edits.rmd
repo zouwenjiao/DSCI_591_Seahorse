@@ -1,0 +1,41 @@
+---
+title: Seahorse Momentum Indicator Proposal
+subtitle: |
+  <center> UBC Master of Data Science </center>
+  <center> DSCI 591 Capstone Project </center>
+  <center> \ </center>
+  <center> Sam Chepal </center>
+  <center> Wenjiao Zou </center>
+  <center> Huayue Lu </center>
+  <center> Kenneth Foo </center>
+  <center> Vincenzo Coia (Supervisor) </center>
+  
+date: "May 5, 2020"
+output:
+  pdf_document: default
+---
+
+```{r setup, include=FALSE,echo=FALSE, message=FALSE}
+suppressMessages(library(knitr))
+knitr::opts_chunk$set(echo = TRUE)
+```
+\newpage
+
+## Executive Summary
+The purpose of this capstone project is to improve a pre-existing stock market trading strategy with the goal of making money and minimizing losses.
+
+## Background
+
+## Research Questions
+
+1. __Optimisation Objective__: Which momentum indicator is most appropriate to filter out low quality trading signals to maximise percentage returns per holding time in the market?
+
+## Optimisation Objective
+
+The first key objective for our capstone is on developing an optimal momentum condition which will maximize the yearly average returns of the existing Seahorse oscillator trading strategy. Our group will approach this optimisation through a series of several steps as outlined below:
+
+**<ins>Step 1: Developing a Baseline</ins>**: We will begin by calculating the baseline performance of naively following Seahorse's oscillator signal where trades will take place only at peaks and troughs of the oscillator. The baseline performance will be calculated by taking the average yearly financial returns over twenty years under this naive strategy. 
+
+**<ins>Step 2: Add Real-World Trade Conditions</ins>**: After we develop a baseline model from the previous step, we will incrementally include several conditions suggested by Seahorse's traders based on their domain experience in financial markets (i.e., never trade "Buy" if the oscillator value is above zero). Based on these conditions, we can determine how each of these rules incrementally impact the strategy's returns relative to the baseline return calculated in step one.
+
+**<ins>Step 3: Add Momentum Conditions and Optimise</ins>**: In addition to the rules we set in step two, Seahorse also suggested adding several momentum conditions (i.e., simple moving average, exponential weighted moving average, relative strength index etc...) to assess the incremental impact on the strategy's financial return. Based on their trading experience, it is expected that adding this type of momentum condition can increase the number of profitable trades. Our objective is to find an optimised combination of momentum conditions which provides the highest average yearly financial return over the past twenty years.

@@ -1,0 +1,2 @@
+,avg_metric,std_metric,avg_metric/std_metric,filter_counts,avg_port_cum_return,avg_holding_time_per_signal
+"EWMA(15/13)_MACD(8,17,9)",-0.06575355349640531,0.4413422820917399,-0.14898539334315902,23883.0,0.9572888904964908,0.8834526650755767

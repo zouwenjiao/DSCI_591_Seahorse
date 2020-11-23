@@ -1,0 +1,2 @@
+,avg_metric,std_metric,avg_metric/std_metric,filter_counts,avg_port_cum_return,avg_holding_time_per_signal
+EWMA(34/13),-0.06186784808127525,0.3700701155430323,-0.16717871960693664,38155.0,1.0373814816067846,0.8416415498187221

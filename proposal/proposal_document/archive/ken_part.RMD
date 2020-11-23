@@ -1,0 +1,21 @@
+---
+title: "ken_proposal_part"
+author: "Kenneth Foo"
+date: "11/05/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Milestones:
+Our project milestones are centered around 2 weeks dedicated each to the Optimisation and Predictive objectives from mid May to Mid June, with proper handover by end June. For more details, please refer to the appendix.
+ 
+## Project Success and Deliverables:
+By the end of the capstone, we want to recommend the best momentum indicator rule based on either portfolio percentage return or precision rate of trades. We also want to create a model that can predict if the primary oscillator trade signals will be profitable or not. All reproducible work will be handed over to Seahorse Strategies.
+
+\newpage
+## Appendix
+
+![](./img/milestones.png)

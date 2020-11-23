@@ -1,0 +1,18 @@
+---
+#title: "Optimisation Model"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.width = 5, fig.height = 3, fig.align = "center")
+```
+
+## Optimisation Model
+
+The first key objective for our capstone is focused on developing an optimal momentum filter which can be added onto the existing Seahorse oscillator signal. This filter can help reduce the number of false-positive trades. Our group will approach this optimization through a series of several steps as outlined below:
+
+**<ins>Step 1: Developing a Baseline</ins>**: Before adding any additional filters, it is important to analyze the performance of the existing strategy without any existing conditions. This can be done by backtesting the oscillator strategy based on the pre-existing conditions set forth by Seahorse  (ie: never trade oscillator if it is above zero) with the exception of the momentum indicator.
+
+**<ins>Step 2: Add a Momentum Overlay</ins>**: Once we have an existing baseline return we can introduce additional momentum filters and determine their impact on the traditional strategy. As an example, the refined model may only execute on trades when the simple moving average and trade suggestion (ie: buy/sell) are both aligned in the same direction. During this step will be able to quantify the effectiveness of adding a momentum indicator to the existing strategy.
+
+**<ins>Step 3: Optimise the Momentum Overlay</ins>**: We will perform several optimization methods to determine the optimal parameters for the momentum indicator with the objective of maximizing cumulative financial returns. It is critical to note this type of data-mining is bound to result in false-positive discoveries, hence the optimal parameter values must be interpreted with a healthy dose of professional skepticism.

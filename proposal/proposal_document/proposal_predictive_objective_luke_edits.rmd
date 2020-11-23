@@ -1,0 +1,36 @@
+---
+title: Seahorse Momentum Indicator Proposal
+subtitle: |
+  <center> UBC Master of Data Science </center>
+  <center> DSCI 591 Capstone Project </center>
+  <center> \ </center>
+  <center> Sam Chepal </center>
+  <center> Wenjiao Zou </center>
+  <center> Huayue Lu </center>
+  <center> Kenneth Foo </center>
+  <center> Vincenzo Coia (Supervisor) </center>
+  
+date: "11/05/2020"
+output:
+  pdf_document: default
+---
+
+```{r setup, include=FALSE,echo=FALSE, message=FALSE}
+suppressMessages(library(knitr))
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Plan for Predictive Objective:
+
+After we found the best filter to get the optimised profit, we want to equip our partner with a automatic tool that can predict the profitability of each trading action. As the filter get more and more complex, it will take time for human to consider all factors simultaneously. With a stock market that changes all the time, quick and precise decision can be very valuable. Moreover, the predictive model should give a binary result (take or ignore) of a potential trading suggestion given by oscillator, beacause, instead of optimization of profit that has been done in previous objective, here we want give direct and clear suggestion on decision making.
+
+**<ins>Train test split:</ins>** We currently have data of 50 stocks, and we will randomly choose 40 of them as our training set and 10 of them as test set. The rationale is that we want the model to generalise to unseen stocks, and thus the test data should comprise of stock data which the model was not exposed to.
+ 
+**<ins>Data Preprocessing:</ins>** Our raw data only contains date, price and oscillator values. However, our objective is predicting the profitability of actions. So we will need to construct predictors and response variables by ourselves based on available data.
+
+a) We will extract all peaks and troughs from oscillator data and assign labels to them as 'sell' and 'buy' signal repectively.
+b) We will create covariates (X) that can include momentum indicators we found in optimisation objective, like the slope of moving average curves.
+c) For  every 'buy' and 'sell' signal, we will create the trade profitability label (Y). If a 'buy' signal follows by a 'sell' signal with a higher stock price, then the 'buy' signal will be labelled as 1 (Profit). Otherwise, the signal's label will be 0 (Loss). 
+    
+**<ins>Model Fitting:</ins>** Various models such as random forest, logistic regression and neural networks will be explored while considering factors such as feature importances and model complexities. Rather than solely tuning the model based on accuracy, we will also care about precison at the same time. Accuracy can secure the quality of our model by maximizing $\frac{Number\ of\ Correct\ Labels}{Number\ of\ All\ Labels }$, and precision can secure our risk level by maximizing $\frac{Number\ of\ True\ Profitable\ Labels}{Number\ of\ All\ Profitable\ Labels }$. Hyperparameter tuning techniques will be employed to avoid overfitting and underfitting issues.
+

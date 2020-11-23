@@ -1,0 +1,40 @@
+---
+title: "Proposal"
+date: "5/11/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Background
+
+Seahorse exploits a proprietary trading algorithm to generate a momentum indicator, which is called oscillator. The oscillator helps identify the direction of a stock, so that we can make wiser trading decision in the stock market. The yellow line in the left graph below illustrates time series data of the oscillator.
+
+
+<p align="center">
+  <img src="../presentation_notebooks/img/oscillator.png" title="Oscillator" width="200" height="200" />
+  <img src="../presentation_notebooks/img/filter2.png" title="MA filter" width="200" height="200" /> 
+</p>
+
+- <font color="#d64e18">Red vertical line: </font> corresponds to the point directly after a peak. 
+    - Defined as <font color="#d64e18">**sell** signals</font>, suggesting selling the stock.
+- <font color="#2bb9cf">Blue vertical line: </font> corresponds to the point directly after a trough. 
+    - Defined as <font color="#2bb9cf">**buy** signals</font>, suggesting purchasing the stock.
+
+However, the oscillator alone doesn't lead to a satisfying prediction accuracy of the stock market direction. Thus, the company use some filters to pick out correct signals. For the capstone, we would like to optimise one of the filters termed "moving average (MA-X) trend alignment” where MA refers to the stock price MA and X is the window. With that filter rule, we should pick signals as the following(illustrated in the right graph above):
+
+- <font color="#d64e18">**sell** signals</font> with a <font color="#d64e18">dropping MA-X</font>
+- <font color="#2bb9cf">**buy** signals</font> with a <font color="#2bb9cf">rising MA-X</font>
+
+We are also interested in searching for other momentum indicators to define what is an UP market or a DOWN market, and how long it lasts.
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,2 @@
+,avg_metric,std_metric,avg_metric/std_metric,filter_counts,avg_port_cum_return,avg_holding_time_per_signal
+"MA(10/13)_MACD(5,35,5)",0.4224965288149355,0.5435314927363379,0.7773174773883517,20724.0,1.5652964072604494,0.8740620777842115
