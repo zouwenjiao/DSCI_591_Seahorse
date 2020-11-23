@@ -12,7 +12,7 @@ This repository is the result of a capstone project between UBC MDS and Seahorse
 
 Achieving higher return is always what investors pursue in the stock market. For Seahorse, our capstone partner, they used their proprietary oscillator data to help identify the direction of stocks to make wiser trading decisions in the market.
 
-The purpose of this capstone project is to improve Seahorse's existing stock market trading strategy using their proprietary oscillator data by maximizing their annual portfolio returns. We have given brief introduction of the background, identifying research questions and setting goals and directions of this project in the [final report](https://github.ubc.ca/MDS-2019-20/DSCI_591-Seahorse/blob/master/Final_report/Final_report.pdf). 
+The purpose of this capstone project is to improve Seahorse's existing stock market trading strategy using their proprietary oscillator data by maximizing their annual portfolio returns. We have given brief introduction of the background, identifying research questions and setting goals and directions of this project in the [final report](https://github.com/zouwenjiao/DSCI_591_Seahorse/tree/main/Final_report). 
 
 
 ### Objective:
